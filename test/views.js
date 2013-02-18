@@ -1860,7 +1860,7 @@ test("`el: false` with rerendering inserted child views doesn't replicate views"
   equal(view.$el.html(), expected.join(''), "the same HTML");
 });
 
-test("`el: false` with non-container element will re-render disorder", 2, function() {
+test("`el: false` with non-container elements will re-render disorder", 2, function() {
   var expected = '<p>Paragraph 1</p><p>Paragraph 2</p>',
     layout = new Backbone.Layout({
       template: _.template('<div class="layout"><div class="content"></div></div>')
